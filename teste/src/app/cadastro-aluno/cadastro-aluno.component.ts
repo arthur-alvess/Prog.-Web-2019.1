@@ -6,12 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./cadastro-aluno.component.css']
 })
 export class CadastroAlunoComponent implements OnInit {
-  nomeAluno: string;
   cadastrados: string[];
   corLista: string;
 
   constructor() {
-    this.nomeAluno = 'Denise';
     this.cadastrados = [];
     this.corLista = '#f00';
   }
@@ -34,7 +32,6 @@ export class CadastroAlunoComponent implements OnInit {
   }
 
   remover(a) {
-    console.log(a);
     let pos: number;
     for (pos = 0; pos < this.cadastrados.length; pos++) {
       if (this.cadastrados[pos] == a) {
@@ -44,7 +41,6 @@ export class CadastroAlunoComponent implements OnInit {
 
     if (pos < this.cadastrados.length) {
       console.log(this.cadastrados.splice(pos, 1));
-
     }
   }
 }

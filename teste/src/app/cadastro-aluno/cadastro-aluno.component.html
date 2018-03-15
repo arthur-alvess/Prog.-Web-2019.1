@@ -1,11 +1,5 @@
-
-
-
-
-
 <form>
-  <input id="nome" name="nome"
-        [(ngModel)]="nomeAluno" #n>
+  <input id="nome" name="nome" #n>
   <button (click)="adicionar(n.value)">
     Cadastrar
   </button>
@@ -14,13 +8,11 @@
   </button>
 </form>
 
-<p>{{nomeAluno}}</p>
-
 <div *ngIf="existeAluno()">
   <p>Alunos cadastrados:</p>
-<ul [style.color]="corLista">
-  <li *ngFor="let aluno of cadastrados">
-    {{aluno}}
-  </li>
-</ul>
+  <ul [style.color]="corLista">
+    <li *ngFor="let aluno of cadastrados">
+      {{aluno}}
+    </li>
+  </ul>
 </div>
