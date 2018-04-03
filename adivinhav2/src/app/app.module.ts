@@ -1,18 +1,15 @@
-import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
-import { MediaBimestralComponent } from './media-bimestral/media-bimestral.component';
-import { MediaSubmitComponent } from './media-submit/media-submit.component';
+import { AdvinhaNúmeroComponent } from './advinha-número/advinha-número.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    MediaBimestralComponent,
-    MediaSubmitComponent
+    AdvinhaNúmeroComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,15 @@
+<div>
+  <form #advform="ngForm">
+    <label for="palpite"></label>
+    <input id="palpite" name="palpite" type="number" min="1" max="20" minlength="1" maxlength="2"
+           [(ngModel)]="palpite" #pa="ngModel">
+    </form>
+</div>
+
+<div *ngIf="palpite > 0">
+  <div [ngSwitch]="obterResultado()">
+    <p *ngSwitchCase="0">Parabéns, você acertou! Aperte F5 para jogar novamente!</p>
+    <p *ngSwitchCase="-1">Tente um número maior!</p>
+    <p *ngSwitchCase="1">Tente um número menor!</p>
+  </div>
+</div>

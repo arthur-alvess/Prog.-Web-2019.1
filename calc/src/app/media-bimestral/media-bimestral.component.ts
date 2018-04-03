@@ -7,12 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MediaBimestralComponent implements OnInit {
 
-  constructor() { }
+  _media: number;
+  _mediaCalculada: boolean;
+
+  constructor() {
+    this._media = 0.0;
+    this._mediaCalculada = false;
+  }
 
   ngOnInit() {
   }
 
   calcularMedia(n1: number, n2: number) {
-    console.log((n1 * 2 + n2 * 2) / 5);
+    this._media = (n1 * 2 + n2 * 3) / 5;
+    this._mediaCalculada = true;
   }
 }
