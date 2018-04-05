@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 
 @Injectable()
-export class AdvinhaService {
+export class AdivinhaService {
   private gerado: number;
 
   constructor() {

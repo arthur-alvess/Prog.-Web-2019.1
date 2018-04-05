@@ -3,13 +3,12 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
-import { AdvinhaNúmeroComponent } from './advinha-número/advinha-número.component';
-
+import { AdivinhaNumeroComponent } from './adivinha-numero/adivinha-numero.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AdvinhaNúmeroComponent
+    AdivinhaNumeroComponent
   ],
   imports: [
     BrowserModule,
